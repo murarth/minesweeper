@@ -98,6 +98,7 @@ class MinesweeperGame(Game):
                 content = 'x'
             else:
                 attr |= curses.color_pair(9)
+                attr |= curses.A_BOLD
                 content = '!'
         elif stopped and item.mine:
             attr |= curses.color_pair(9)
